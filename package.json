@@ -1,0 +1,23 @@
+{
+  "name": "quickumbrella",
+  "version": "1.0.0",
+  "description": "\"# Fast-Umbrella-Project\"",
+  "main": "app.js",
+  "dependencies": {
+    "vant-weapp": "^0.5.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayBery/Fast-Umbrella-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayBery/Fast-Umbrella-Project/issues"
+  },
+  "homepage": "https://github.com/JayBery/Fast-Umbrella-Project#readme"
+}
