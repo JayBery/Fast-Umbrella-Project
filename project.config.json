@@ -13,7 +13,7 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.3",
+	"libVersion": "2.8.0",
 	"appid": "wx7a492dc6b4dd7707",
 	"projectname": "QuickUmbrella",
 	"debugOptions": {
