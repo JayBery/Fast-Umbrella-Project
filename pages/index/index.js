@@ -4,34 +4,16 @@ const app = getApp()
 
 Page({
   data: {
+    //tabbar
+    tabbar: {},
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    active: 0,
-    icon: {
-      normal: '//img.yzcdn.cn/icon-normal.png',
-      active: '//img.yzcdn.cn/icon-active.png'
-    }
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  onChange(event) {
-    console.log(event.detail);
-  },
-  onShow() {
-    if (typeof this.getTabBar === 'function' &&
-      this.getTabBar()) {
-      this.getTabBar().setData({
-        selected: 0
-      })
-    }
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  
   onLoad: function () {
+    app.editTabbar();
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
