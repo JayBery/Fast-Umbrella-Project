@@ -135,13 +135,13 @@ Page({
       confirmText: '去设置',
       showCancel: false,
       content: e,
-      success: function (res) {
-        if (res.confirm) {
-          wx.navigateTo({
-            url: '../setting/setting',
-          })
-        }
-      }
+      // success: function (res) {
+      //   if (res.confirm) {
+      //     wx.navigateTo({
+      //       url: '../setting/setting',
+      //     })
+      //   }
+      // }
     })
   }
 })

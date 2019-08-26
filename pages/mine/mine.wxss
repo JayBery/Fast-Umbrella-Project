@@ -6,8 +6,8 @@
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
+  width: 158rpx;
+  height: 158rpx;
   margin: 20rpx;
   border-radius: 50%;
 }
@@ -18,4 +18,74 @@
 
 .usermotto {
   margin-top: 200px;
+}
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 200rpx;
+}
+
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}
+
+.mine-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  font-size: 32rpx
+}
+
+.mine-pic{
+  width: 45%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+}
+
+.have-photo{
+  margin-left: 10rpx;
+}
+
+.have-photo text{
+  color: #676767;
+}
+
+.mine-card{
+  width: 45%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  border-left: 1rpx #d2d2d2 solid;
+}
+
+.icon-photo{
+  height: 88rpx;
+  width: 88rpx;
 }
