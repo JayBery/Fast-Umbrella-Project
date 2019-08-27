@@ -1,2 +1,36 @@
-<!--pages/middle/middle.wxml-->
-<text>pages/middle/middle.wxml</text>
+<view hover-class="none" hover-stop-propagation="false" style="width: 100%; height: 100%;">
+
+  <map id="map" longitude="{{longitude}}" latitude=" {{latitude}}" markers="{{markers}}" scale="18" show-location style="width: 100%; height: 100%;"></map>
+  <view class="need-card">
+    <van-tabs active="{{ active }}" bind:change="onChange">
+      <van-tab title="送伞">
+        <van-cell-group>
+          <van-field
+            value="{{ username }}"
+            clearable
+            icon="column"
+            left-icon="location-o"
+            placeholder="从哪里出发"
+            bind:click-icon="onClickIcon"
+          />
+          <van-field
+            value="{{ username }}"
+            clearable
+            icon="column"
+            left-icon="location-o"
+            placeholder="送到哪里去"
+            bind:click-icon="onClickIcon"
+          />
+          <van-field
+            value="{{ username }}"
+            clearable
+            left-icon="phone-o"
+            placeholder="输入您的联系电话"
+            bind:click-icon="onClickIcon"
+          />
+        </van-cell-group>
+      </van-tab>
+      <van-tab title="借伞">二维码</van-tab>
+    </van-tabs>
+  </view>
+</view>

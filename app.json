@@ -28,5 +28,10 @@
       }
     ]
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于快伞小程序"
+    }
+  },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,1 +1,17 @@
-/* pages/middle/middle.wxss */
+page{
+  height: 60%;
+  background: #f3f3f3;
+}
+
+.need-card{
+  height: 60%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #ffffff;
+}
+
+.need-card .van-cell {
+  height: 120rpx;
+  padding: 6% 20px 0 20px!important;
+}
