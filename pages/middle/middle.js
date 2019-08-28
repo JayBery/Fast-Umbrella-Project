@@ -1,5 +1,6 @@
 Page({
   data: {
+    postAll: {},
     longitude: 113.324520,
     latitude: 23.099994,
     markers: [{
@@ -36,8 +37,24 @@ Page({
       icon: 'none'
     });
   },
-  onClickIcon() {
-    console.log("请输入出发地");
+  startFinish(e) {
+    this.data.postAll.startPlace = e.detail.value
+    if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone){
+      //如果都填写完 1.未授权跳转授权页然后跳转确认订单 2.授权过了直接确认订单
+      console.log('finish')
+    }
+  }, 
+  endFinish(e) {
+    this.data.postAll.endPlace = e.detail.value
+    if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone) {
+      console.log('finish')
+    }
+  },
+  phoneFinish(e) {
+    this.data.postAll.phone = e.detail.value
+    if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone) {
+      console.log('finish')
+    }
   },
   onReady: function () {
 

@@ -6,27 +6,27 @@
       <van-tab title="送伞">
         <van-cell-group>
           <van-field
-            value="{{ username }}"
+            value="{{ startPlace }}"
             clearable
             icon="column"
             left-icon="location-o"
             placeholder="从哪里出发"
-            bind:click-icon="onClickIcon"
+            bind:blur="startFinish"
           />
           <van-field
-            value="{{ username }}"
+            value="{{ endPlace }}"
             clearable
             icon="column"
             left-icon="location-o"
             placeholder="送到哪里去"
-            bind:click-icon="onClickIcon"
+            bind:blur="endFinish"
           />
           <van-field
-            value="{{ username }}"
+            value="{{ phone }}"
             clearable
             left-icon="phone-o"
             placeholder="输入您的联系电话"
-            bind:click-icon="onClickIcon"
+            bind:blur="phoneFinish"
           />
         </van-cell-group>
       </van-tab>
