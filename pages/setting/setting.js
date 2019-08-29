@@ -17,9 +17,17 @@ Page({
         }
       })
       app.globalData.userInfo = e.detail.userInfo
-      wx.reLaunch({
-        url: '../mine/mine'
+      let pages = getCurrentPages();
+      let prevPage = pages[pages.length - 2];
+      prevPage.setData({
+        hasUserInfo: true
       })
+      wx.navigateBack({
+        delta: 1,
+      })
+      // wx.reLaunch({
+      //   url: '../mine/mine'
+      // })
       
     } else {
       wx.showModal({

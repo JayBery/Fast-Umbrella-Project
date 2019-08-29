@@ -7,7 +7,6 @@
         <van-cell-group>
           <van-field
             value="{{ startPlace }}"
-            clearable
             icon="column"
             left-icon="location-o"
             placeholder="从哪里出发"
@@ -15,7 +14,6 @@
           />
           <van-field
             value="{{ endPlace }}"
-            clearable
             icon="column"
             left-icon="location-o"
             placeholder="送到哪里去"
@@ -23,7 +21,6 @@
           />
           <van-field
             value="{{ phone }}"
-            clearable
             left-icon="phone-o"
             placeholder="输入您的联系电话"
             bind:blur="phoneFinish"

@@ -106,6 +106,7 @@ Page({
           wx.getUserInfo({
             success(res) {
               console.log("获取用户信息成功", res)
+              app.globalData.userInfo = res.userInfo
               that.setData({
                 name: res.userInfo.nickName,
                 userInfo: res.userInfo,
