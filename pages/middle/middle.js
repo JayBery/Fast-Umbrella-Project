@@ -17,6 +17,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     jump: false,
+    result: '',
   },
   onLoad: function () {
     app.editTabbar();
@@ -125,6 +126,18 @@ Page({
         })
       }
     }
+  },
+  getScancode: function () {
+    var _this = this;
+    // 只允许从相机扫码
+    wx.scanCode({
+      onlyFromCamera: true,
+      success: (res) => {
+        console.log("扫描成功")
+      }
+    })
+
+
   },
   onReady: function () {
 

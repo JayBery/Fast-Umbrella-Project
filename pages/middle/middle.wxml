@@ -27,7 +27,12 @@
           />
         </van-cell-group>
       </van-tab>
-      <van-tab title="借伞">二维码</van-tab>
+      <van-tab title="借伞">
+        <view class="imagesize">
+          <image src="/images/scanning.png" bindtap='getScancode'></image>
+        </view>
+        <view class="scantext">扫描借伞</view>
+      </van-tab>
     </van-tabs>
   </view>
 </view>
