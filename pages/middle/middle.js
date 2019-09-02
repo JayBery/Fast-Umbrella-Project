@@ -65,6 +65,42 @@ Page({
       }
     })
   },
+  getUserInfo: function (e) {
+    let that = this;
+    // console.log(e)
+    // 获取用户信息
+    wx.getSetting({
+      success(res) {
+        // console.log("res", res)
+        if (res.authSetting['scope.userInfo']) {
+          console.log("已授权=====")
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success(res) {
+              console.log("获取用户信息成功", res)
+              app.globalData.userInfo = res.userInfo
+              that.setData({
+                name: res.userInfo.nickName,
+                userInfo: res.userInfo,
+                hasUserInfo: true
+              })
+              wx.login({
+                success: function (res) {
+                  console.log(res);
+                }
+              })
+            },
+            fail(res) {
+              console.log("获取用户信息失败", res)
+            }
+          })
+        } else {
+          console.log("未授权=====")
+          that.showSettingToast("请授权")
+        }
+      }
+    })
+  },
   onChange(event) {
     if (event.detail.index == 0){
       wx.showToast({
@@ -79,54 +115,24 @@ Page({
     }
   },
   startFinish(e) {
-    this.data.postAll.startPlace = e.detail.value
+    var key = e.target.id
+    if (key == "startPlace") {
+      this.data.postAll.startPlace = e.detail.value
+    } else if (key == "endPlace") {
+      this.data.postAll.endPlace = e.detail.value
+    } else if (key == "phone") {
+      this.data.postAll.phone = e.detail.value
+    }
     if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone){
-      //如果都填写完 1.未授权跳转授权页然后跳转确认订单 2.授权过了直接确认订单
       if (this.data.hasUserInfo){
         console.log("授权过了直接确认订单")
       }else{
-        if (this.jump) {
-          return;
-        }
-        this.jump = true;
         wx.navigateTo({
           url: '../setting/setting',
         })
       }
     }
   }, 
-  endFinish(e) {
-    this.data.postAll.endPlace = e.detail.value
-    if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone) {
-      if (this.data.hasUserInfo) {
-        console.log("授权过了直接确认订单")
-      } else {
-        if (this.jump) {
-          return;
-        }
-        this.jump = true;
-        wx.navigateTo({
-          url: '../setting/setting',
-        })
-      }
-    }
-  },
-  phoneFinish(e) {
-    this.data.postAll.phone = e.detail.value
-    if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone) {
-      if (this.data.hasUserInfo) {
-        console.log("授权过了直接确认订单")
-      } else {
-        if (this.jump) {
-          return;
-        }
-        this.jump = true;
-        wx.navigateTo({
-          url: '../setting/setting',
-        })
-      }
-    }
-  },
   getScancode: function () {
     var _this = this;
     // 只允许从相机扫码

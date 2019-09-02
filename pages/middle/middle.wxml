@@ -1,4 +1,19 @@
-<view hover-class="none" hover-stop-propagation="false" style="width: 100%; height: 100%;">
+<view wx:if="{{!hasUserInfo && canIUse}}">
+    <view class='header'>
+        <image src='/images/wx_login.jpg'></image>
+    </view>
+
+    <view class='content'>
+        <view>申请获取以下权限</view>
+        <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+
+    <button class='bottom' type='primary' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        授权登录
+    </button>
+</view>
+
+<view wx:else hover-class="none" hover-stop-propagation="false" style="width: 100%; height: 100%;">
 
   <map id="map" longitude="{{longitude}}" latitude=" {{latitude}}" markers="{{markers}}" scale="18" show-location style="width: 100%; height: 100%;"></map>
   <view class="need-card">
@@ -6,6 +21,7 @@
       <van-tab title="送伞">
         <van-cell-group>
           <van-field
+            id="startPlace"
             value="{{ startPlace }}"
             icon="column"
             left-icon="location-o"
@@ -13,17 +29,19 @@
             bind:blur="startFinish"
           />
           <van-field
+            id="endPlace"
             value="{{ endPlace }}"
             icon="column"
             left-icon="location-o"
             placeholder="送到哪里去"
-            bind:blur="endFinish"
+            bind:blur="startFinish"
           />
           <van-field
+            id="phone"
             value="{{ phone }}"
             left-icon="phone-o"
             placeholder="输入您的联系电话"
-            bind:blur="phoneFinish"
+            bind:blur="startFinish"
           />
         </van-cell-group>
       </van-tab>
