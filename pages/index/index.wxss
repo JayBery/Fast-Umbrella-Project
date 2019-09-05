@@ -1,21 +1,74 @@
 /**index.wxss**/
-.userinfo {
+page{
+  background: #f7f7f7;
+}
+
+.user-card{
+  background: #ffffff;
+  width: 86vw;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  padding: 30rpx;
+  border-radius: 50rpx;
+}
+
+.card-top{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center;  */
+  font-size: 32rpx
+}
+
+.username{
+  margin-left: 10rpx;
+  color: #979797;
+  font-size: 28rpx;
+}
+
+.username text{
+  color: #87c1c2;
+  font-size: 32rpx;
+}
+.card-top image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+
+.img-middle {
+  margin: 30rpx 0;
+  width: 70%;
+}
+.img-middle image{
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+.text-bottom{
+  font-size: 32rpx;
+  line-height:1.5em;
+}
+
+.icon-bottom{
+  font-size: 58rpx;
+  line-height: 28rpx;
+  margin-top: 20rpx;
+  color: #ACACAC;
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.icon-bottom text{
+  font-size: 32rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.left-say{
+  margin-left: 20rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.right-share{
+  margin-left: 40vw;
 }
+  
