@@ -17,24 +17,26 @@ page{
   flex-direction: row;
   align-items: center;
   /* justify-content: center;  */
-  font-size: 32rpx
+  font-size: 28rpx
+}
+
+.card-top image{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 88rpx;
 }
 
 .username{
   margin-left: 10rpx;
   color: #979797;
-  font-size: 28rpx;
+  font-size: 26rpx;
 }
 
 .username text{
   color: #87c1c2;
-  font-size: 32rpx;
+  font-size: 28rpx;
 }
-.card-top image{
-  width: 100rpx;
-  height: 100rpx;
-  border-radius: 100rpx;
-}
+
 
 .img-middle {
   margin: 30rpx 0;
@@ -51,7 +53,7 @@ page{
 }
 
 .icon-bottom{
-  font-size: 58rpx;
+  font-size: 48rpx;
   line-height: 28rpx;
   margin-top: 20rpx;
   color: #ACACAC;
@@ -61,7 +63,7 @@ page{
 }
 
 .icon-bottom text{
-  font-size: 32rpx;
+  font-size: 30rpx;
 }
 
 .left-say{
