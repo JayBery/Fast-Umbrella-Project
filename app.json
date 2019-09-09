@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/middle/middle",
     "pages/mine/mine",
-    "pages/setting/setting"
+    "pages/setting/setting",
+    "pages/confirmOrder/confirmOrder"
   ],
   "window": {
     "navigationBarBackgroundColor": "#3080BF",

@@ -16,7 +16,6 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    jump: false,
     result: '',
   },
   onLoad: function () {
@@ -125,7 +124,9 @@ Page({
     }
     if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone){
       if (this.data.hasUserInfo){
-        console.log("授权过了直接确认订单")
+        wx.redirectTo({
+          url: '../confirmOrder/confirmOrder',
+        })
       }else{
         wx.navigateTo({
           url: '../setting/setting',
