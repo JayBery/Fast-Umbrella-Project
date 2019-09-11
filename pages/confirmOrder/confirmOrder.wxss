@@ -106,32 +106,3 @@ page{
   margin-left: 50vw;
   margin-right: 10rpx;
 }
-
-.sure{
-  position:fixed;
-  bottom:0;
-  height: 100rpx;
-  width: 100vw;
-  background: #ffffff;
-  padding: 20rpx;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 30rpx;
-}
-
-.sure .money{
-  color: #bc6a4b;
-  font-size: 34rpx;
-}
-
-.sure .post{
-  color: #ffffff;
-  font-size: 34rpx;
-  width: 34vw;
-  text-align: center;
-  line-height: 90rpx;
-  height: 90rpx;
-  background: #3080BF;
-  margin-left: 42vw
-}

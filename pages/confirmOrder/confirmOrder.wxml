@@ -28,8 +28,9 @@
     <van-icon name="arrow" class="right"/>
   </view>
 </view>
-<view class="sure">
-  <text class="title">总价</text>
-  <text class="money">￥18</text>
-  <view class="post">提交订单</view>
-</view>
+<van-submit-bar
+  class="sure"
+  price="{{ 3050 }}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+/>
