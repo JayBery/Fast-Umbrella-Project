@@ -28,7 +28,7 @@
       <image class="icon-photo" src="/images/album.png"></image>
       <text class="have-photo"><text>1/9\n</text>上传相册</text>
     </view>
-    <view class="mine-card">
+    <view class="mine-card" bindtap="jumpPage">
       <image class="icon-photo" src="/images/data.png"></image>
       <text class="have-photo"><text>72%\n</text>编辑资料</text></view>
   </view>

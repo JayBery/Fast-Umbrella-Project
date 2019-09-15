@@ -144,5 +144,10 @@ Page({
       //   }
       // }
     })
+  },
+  jumpPage: function () {
+    wx.navigateTo({
+      url: '../personalData/personalData',
+    })
   }
 })

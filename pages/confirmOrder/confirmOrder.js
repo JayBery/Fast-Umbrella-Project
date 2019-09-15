@@ -14,6 +14,12 @@ Page({
   onLoad: function (options) {
 
   },
+  onSubmit(){
+    console.log("跳转首页发布成功，在首页可看到该动态")
+    wx.switchTab({
+      url: '../index/index',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

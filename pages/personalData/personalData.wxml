@@ -1,0 +1,55 @@
+<!--pages/personalData/personalData.wxml-->
+<view class="headUser">
+  <text class="leftText">头像</text>
+  <image src="{{userInfo.avatarUrl}}" class="imgRight"></image>
+  <van-icon name="arrow" class="right"/>
+</view>
+<view class="photo">
+  <view class="header">相册<text>·1/9</text></view>
+  <image src="{{userInfo.avatarUrl}}" class="photoAll"></image>
+  <image src="/images/upPic.png" class="photoAll"></image>
+</view>
+
+<view class="infTop">基础信息</view>
+
+<view class="card">
+  <van-icon name="contact" class="left"/>
+  <text class="cardTitle">昵称</text>
+  <van-icon name="arrow" class="right"/>
+  <text class="cardRight">JayBerg</text>
+</view>
+
+<view class="card">
+  <van-icon name="friends-o"  class="left"/>
+  <text class="cardTitle">性别</text>
+  <van-icon name="arrow" class="right"/>
+  <text class="cardRight">男</text>
+</view>
+
+<view class="card">
+  <van-icon name="notes-o"  class="left"/>
+  <text class="cardTitle">出生日期</text>
+  <van-icon name="arrow" class="right"/>
+  <text class="cardRight">2000-01-01</text>
+</view>
+
+<view class="card">
+  <van-icon name="user-o"  class="left"/>
+  <text class="cardTitle">身高</text>
+  <van-icon name="arrow" class="right"/>
+  <text class="cardRight">180CM</text>
+</view>
+
+<view class="card">
+  <van-icon name="home-o"  class="left"/>
+  <text class="cardTitle">学校</text>
+  <van-icon name="arrow" class="right"/>
+  <text class="cardRight">深圳技师学院</text>
+</view>
+
+<view class="card">
+  <van-icon name="records"  class="left"/>
+  <text class="cardTitle">自我介绍</text>
+  <van-icon name="arrow" class="right"/>
+  <text class="cardRight">介绍一下这位铁憨憨</text>
+</view>

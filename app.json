@@ -4,7 +4,8 @@
     "pages/middle/middle",
     "pages/mine/mine",
     "pages/setting/setting",
-    "pages/confirmOrder/confirmOrder"
+    "pages/confirmOrder/confirmOrder",
+    "pages/personalData/personalData"
   ],
   "window": {
     "navigationBarBackgroundColor": "#3080BF",
