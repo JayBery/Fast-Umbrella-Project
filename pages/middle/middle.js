@@ -1,22 +1,33 @@
 const app = getApp()
-
+// import Notify from '/miniprogram_npm/vant-weapp/notify/notify';
+import Notify from '../../miniprogram_npm/vant-weapp/notify/notify'
 Page({
   data: {
     postAll: {},
-    longitude: 113.324520,
-    latitude: 23.099994,
     markers: [{
       id: 0,
       latitude: 23.099994,
       longitude: 113.324520,
       width: 50,
-      height: 50,
-      active: 1
+      height: 50
+    }],
+    polyline: [{
+      points: [{
+        longitude: 113.3245211,
+        latitude: 23.10229
+      }, {
+        longitude: 13.324520,
+        latitude: 23.21229
+      }],
+      color: "#FF0000DD",
+      width: 2,
+      dottedLine: true
     }],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     result: '',
+    phoneIf: false,
   },
   onLoad: function () {
     app.editTabbar();
@@ -122,6 +133,10 @@ Page({
     } else if (key == "phone") {
       this.data.postAll.phone = e.detail.value
     }
+    // debugger
+    if (this.data.phoneIf == false){
+      return;
+    }
     if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone){
       if (this.data.hasUserInfo){
         wx.redirectTo({
@@ -145,6 +160,51 @@ Page({
     })
 
 
+  },
+  telChange: function (event) {
+    const phone = event.detail || event;
+    let message = '';
+    let disable = '';
+    if (phone) {
+      if (/^1(3|4|5|7|8)\d{9}$/.test(phone)) {
+        message = '';
+        disable = false;
+        this.data.phoneIf = true;
+        Notify({
+          text: '输入正确',
+          duration: 1000,
+          selector: '#custom-selector',
+          backgroundColor: '#07c160'
+        });
+        this.startFinish()
+      } else {
+        Notify({
+          text: '您输入的手机号码有误',
+          duration: 1000,
+          selector: '#van-notify',
+          backgroundColor: '#ee0a24'
+        });
+        disable = true;
+      }
+    } else {
+      Notify({
+        text: '您输入的手机号码有误',
+        duration: 1000,
+        selector: '#van-notify',
+        backgroundColor: '#ee0a24'
+      });
+      disable = true
+    }
+    this.setData({
+      telMessage: message,
+      disabled: disable,
+      txn_tel: phone
+    });
+    if (this.data.disabled === true) {
+      return false;
+    } else {
+      return true;
+    }
   },
   onReady: function () {
 

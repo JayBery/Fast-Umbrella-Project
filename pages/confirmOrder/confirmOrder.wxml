@@ -2,7 +2,7 @@
 <view class="place">
   <view class="start">
     <van-icon name="location" class="leftIcon"/>
-    <text class="startPlace">深圳技师学院\n<text>13682666570</text></text>
+    <text class="startPlace">深圳技师学院深圳技师学院深圳技师学院深圳技师学院深圳技师学院深圳技师学院深圳技师学院深圳技师学院深圳技师学院深圳技师学院深圳技师学院\n<text>13682666570</text></text>
     <text class="rightPlace">地址簿</text>
   </view>
   <view class="line"></view>

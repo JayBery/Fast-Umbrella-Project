@@ -29,6 +29,10 @@ page{
 
 .startPlace{
   margin-left: 10rpx;
+  width: 202rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
 .startPlace text{
@@ -38,6 +42,10 @@ page{
 
 .endPlace{
   margin-left: 10rpx;
+  width: 202rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
 .endPlace text{
@@ -46,7 +54,7 @@ page{
 }
 
 .rightPlace{
-  margin-left: 40vw;
+  margin-left: 38vw;
   color: #7293AE
 }
 
