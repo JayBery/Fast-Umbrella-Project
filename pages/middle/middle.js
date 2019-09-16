@@ -126,6 +126,7 @@ Page({
   },
   startFinish(e) {
     var key = e.target.id
+    console.log(e)
     if (key == "startPlace") {
       this.data.postAll.startPlace = e.detail.value
     } else if (key == "endPlace") {
@@ -137,6 +138,7 @@ Page({
     if (this.data.phoneIf == false){
       return;
     }
+    console.log(this.data.postAll)
     if (this.data.postAll.startPlace && this.data.postAll.endPlace && this.data.postAll.phone){
       if (this.data.hasUserInfo){
         wx.redirectTo({
@@ -176,7 +178,6 @@ Page({
           selector: '#custom-selector',
           backgroundColor: '#07c160'
         });
-        this.startFinish()
       } else {
         Notify({
           text: '您输入的手机号码有误',
