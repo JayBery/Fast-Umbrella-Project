@@ -12,40 +12,71 @@
 
 <view class="infTop">基础信息</view>
 
-<view class="card">
+<view class="card" bindtap='changeName'>
   <van-icon name="contact" class="left"/>
   <text class="cardTitle">昵称</text>
   <van-icon name="arrow" class="right"/>
-  <text class="cardRight">JayBerg</text>
+  <text class="cardRight">{{name}}</text>
+</view>
+<van-popup show="{{ show }}" bind:close="onClose" custom-style="border-radius: 30rpx;">
+  <view class='alertCard'>
+      <view class='top'>昵称修改</view>
+      <input class='nameInput' value='JayBerg' bind:blur="saveNameInput"></input>
+      <view class='bottomBtn'>
+        <button class='close' bindtap='onClose'>取消</button>
+        <button class='save' bindtap='saveName'>保存</button>
+      </view>
+  </view>
+</van-popup>
+
+<view class="card">
+  <picker bindchange="bindViewEvent" data-model="component" data-method="bindSelect" data-name="index"  value='{{index}}' range="{{gender}}">
+    <van-icon name="friends-o"  class="left"/>
+    <text class="cardTitle">性别</text>
+    <van-icon name="arrow" class="right"/>
+    <text class="cardRight">{{gender[index]}}</text>
+  </picker>
 </view>
 
 <view class="card">
-  <van-icon name="friends-o"  class="left"/>
-  <text class="cardTitle">性别</text>
-  <van-icon name="arrow" class="right"/>
-  <text class="cardRight">男</text>
-</view>
-
-<view class="card">
+  <picker mode="date" value="{{date}}"  bindchange="bindViewEvent2" end data-model="component" data-method="bindSelect" date-mode="date" data-name="date">
   <van-icon name="notes-o"  class="left"/>
   <text class="cardTitle">出生日期</text>
   <van-icon name="arrow" class="right"/>
-  <text class="cardRight">2000-01-01</text>
+  <text class="cardRight">{{date}}</text>
+  </picker>
 </view>
 
-<view class="card">
-  <van-icon name="user-o"  class="left"/>
-  <text class="cardTitle">身高</text>
-  <van-icon name="arrow" class="right"/>
-  <text class="cardRight">180CM</text>
-</view>
+
+
 
 <view class="card">
+  <picker bindchange="bindPickerChange" value="{{arrayIndex}}" range="{{array}}">
+    <van-icon name="user-o"  class="left"/>
+    <text class="cardTitle">身高</text>
+    <van-icon name="arrow" class="right"/>
+    <text class="cardRight">{{array[arrayIndex]}}CM</text>
+  </picker>
+</view>
+
+<view class="card" bindtap='changeSchool'>
   <van-icon name="home-o"  class="left"/>
   <text class="cardTitle">学校</text>
   <van-icon name="arrow" class="right"/>
-  <text class="cardRight">深圳技师学院</text>
+  <text class="cardRight">{{school}}</text>
 </view>
+<van-popup show="{{ schoolShow }}" bind:close="onClose" custom-style="border-radius: 30rpx;">
+  <view class='alertCard'>
+    <view class='top'>学校修改</view>
+    <input class='nameInput' placeholder='请填写学校' bind:blur="saveSchoolInput"></input>
+    <view class='bottomBtn'>
+      <button class='close' bindtap='onClose'>取消</button>
+      <button class='save' bindtap='saveSchool'>保存</button>
+    </view>
+    
+  </view>
+</van-popup>
+
 
 <view class="card">
   <van-icon name="records"  class="left"/>

@@ -9,6 +9,17 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    show: false,
+    schoolShow: false,
+    gender: ['男', '女'],
+    date: '2000-01-01',
+    index: 0,
+    array: [100],
+    arrayIndex: 60,
+    name: '',
+    school: '无',
+    timename: '',
+    timeschool: ''
   },
 
   /**
@@ -42,8 +53,60 @@ Page({
         }
       })
     }
+    let a = this.data.array[0];
+    for(let i=0;i<100;i++){
+      a = a+1;
+      this.setData({
+        array: this.data.array.concat(a)
+      })
+    }
+    this.setData({
+      name: this.data.userInfo.nickName
+    })
   },
-
+  changeName() {
+    this.setData({ show: true });
+  },
+  onClose() {
+    this.setData({ show: false });
+    this.setData({ schoolShow: false });
+  },
+  bindViewEvent: function (e) {
+    this.setData({ index: e.detail.value });
+  },
+  bindViewEvent2: function (e) {
+    this.setData({ date: e.detail.value });
+  },
+  bindPickerChange : function(e){
+    this.setData({ arrayIndex: e.detail.value });
+  },
+  saveNameInput: function(e){
+    this.setData({
+      timename: e.detail.value
+    })
+    console.log('暂存名字', e.detail.value)
+  },
+  saveSchoolInput: function (e) {
+    this.setData({
+      timeschool: e.detail.value
+    })
+    console.log('暂存学校', e.detail.value)
+  },
+  changeSchool(){
+    this.setData({ schoolShow: true });
+  },
+  saveName(){
+    this.setData({
+      name: this.data.timename
+    })
+    this.onClose()
+  },
+  saveSchool(){
+    this.setData({
+      school: this.data.timeschool
+    })
+    this.onClose()
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

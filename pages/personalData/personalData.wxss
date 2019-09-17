@@ -81,3 +81,44 @@
 .card .right{
   float: right;
 }
+
+.alertCard{
+  width: 70vw;
+  height: 50vw;
+}
+
+.alertCard .top{
+  margin: 60rpx 0 35rpx 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.alertCard .nameInput{
+  width: 62vw;
+  height: 120rpx;
+  background: #f6f6f6;
+  text-align: center;
+  line-height: 120rpx;
+  margin: 0 auto;
+}
+
+.close{
+  width: 35vw;
+  background: #f6f6f6;
+  border-radius: 0;
+  border-bottom-left-radius: 30rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.save{
+  width: 35vw;
+  background: #3080BF;
+  color: #ffffff;
+  border-radius: 0;
+  border-bottom-right-radius: 30rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
