@@ -6,7 +6,8 @@
 </view>
 <view class="photo">
   <view class="header">相册<text>·1/9</text></view>
-  <image src="{{userInfo.avatarUrl}}" class="photoAll"></image>
+  <image src="{{userInfo.avatarUrl}}" class="photoAll" mode="aspectFill"></image>
+  <image src="/images/cr7.jpg" class="photoAll" mode="aspectFill"></image>
   <image src="/images/upPic.png" class="photoAll"></image>
 </view>
 
@@ -78,9 +79,20 @@
 </van-popup>
 
 
-<view class="card">
+<view class="card" bindtap='changePersonal'>
   <van-icon name="records"  class="left"/>
   <text class="cardTitle">自我介绍</text>
   <van-icon name="arrow" class="right"/>
-  <text class="cardRight">介绍一下这位铁憨憨</text>
+  <text class="cardRight">{{personal}}</text>
 </view>
+<van-popup show="{{ personalShow }}" bind:close="onClose" custom-style="border-radius: 30rpx;">
+  <view class='alertCard'>
+    <view class='top'>自我介绍</view>
+    <input class='nameInput' placeholder='请填写自我介绍' bind:blur="savePersonalInput"></input>
+    <view class='bottomBtn'>
+      <button class='close' bindtap='onClose'>取消</button>
+      <button class='save' bindtap='savePersonal'>保存</button>
+    </view>
+    
+  </view>
+</van-popup>

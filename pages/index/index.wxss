@@ -43,7 +43,8 @@ page{
   width: 70%;
 }
 .img-middle image{
-  width: 100%;
+  width: 380rpx;
+  height: 380rpx;
   border-radius: 20rpx;
 }
 
@@ -63,7 +64,7 @@ page{
 }
 
 .icon-bottom text{
-  font-size: 30rpx;
+  font-size: 27rpx;
 }
 
 .left-say{

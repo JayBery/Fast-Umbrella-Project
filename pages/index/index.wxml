@@ -6,7 +6,7 @@
       <text class="username"><text>屎到淋头还搅便\n</text>1个小时前</text>
     </view>
     <view class="img-middle">
-      <image src="/images/cr7.jpg" mode='widthFix'></image>
+      <image src="/images/cr7.jpg" mode="aspectFill"></image>
     </view>
     <view class="text-bottom">天神下凡的C罗，在欧冠淘汰赛用帽子戏法带领尤文图斯淘汰马竞，成功晋级</view>
     <view class="icon-bottom">
@@ -21,7 +21,7 @@
       <text class="username"><text>屎到淋头还搅便\n</text>1个小时前</text>
     </view>
     <view class="img-middle">
-      <image src="/images/cr7.jpg" mode='widthFix'></image>
+      <image src="/images/cr7.jpg" mode="aspectFill"></image>
     </view>
     <view class="text-bottom">天神下凡的C罗，在欧冠淘汰赛用帽子戏法带领尤文图斯淘汰马竞，成功晋级</view>
     <view class="icon-bottom">

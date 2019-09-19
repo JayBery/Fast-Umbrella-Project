@@ -11,6 +11,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     show: false,
     schoolShow: false,
+    personalShow: false,
     gender: ['男', '女'],
     date: '2000-01-01',
     index: 0,
@@ -18,8 +19,10 @@ Page({
     arrayIndex: 60,
     name: '',
     school: '无',
+    personal: '无',
     timename: '',
-    timeschool: ''
+    timeschool: '',
+    timepersonal: ''
   },
 
   /**
@@ -70,6 +73,7 @@ Page({
   onClose() {
     this.setData({ show: false });
     this.setData({ schoolShow: false });
+    this.setData({ personalShow: false });
   },
   bindViewEvent: function (e) {
     this.setData({ index: e.detail.value });
@@ -92,6 +96,12 @@ Page({
     })
     console.log('暂存学校', e.detail.value)
   },
+  savePersonalInput: function (e) {
+    this.setData({
+      timepersonal: e.detail.value
+    })
+    console.log('暂存自我介绍', e.detail.value)
+  },
   changeSchool(){
     this.setData({ schoolShow: true });
   },
@@ -106,6 +116,15 @@ Page({
       school: this.data.timeschool
     })
     this.onClose()
+  },
+  savePersonal() {
+    this.setData({
+      personal: this.data.timepersonal
+    })
+    this.onClose()
+  },
+  changePersonal() {
+    this.setData({ personalShow: true });
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
