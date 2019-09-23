@@ -1,4 +1,4 @@
-// pages/confirmOrder.js
+// pages/addressList/addressList.js
 Page({
 
   /**
@@ -13,17 +13,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-  onSubmit(){
-    console.log("跳转首页发布成功，在首页可看到该动态")
-    wx.switchTab({
-      url: '../index/index',
-    })
-  },
-  address(){
-    wx.navigateTo({
-      url: '../addressList/addressList',
-    })
   },
 
   /**

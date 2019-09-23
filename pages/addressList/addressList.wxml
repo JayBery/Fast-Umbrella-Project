@@ -1,0 +1,32 @@
+<!--pages/addressList/addressList.wxml-->
+<view class="title">选择地址</view>
+<view class='addressList'>
+  <view class='listTop'>
+    <view class="start">
+      <van-icon class='circle' name="play" color='#77c077'/>
+      <text class="startPlace">深圳技师学院\n<text>13682666570</text></text>
+      <van-icon name="edit" class="rightPlace" bindtap='set'/>
+    </view>
+    <view class="line"></view>
+    <view class="end">
+      <van-icon class='circle' name="play" color='#f17274'/>
+      <text class="endPlace">深圳技师学院\n<text>13682666570</text></text>
+      <van-icon name="edit" class="rightPlace" bindtap='set'/>
+    </view>
+  </view>
+  <view class='listTop'>
+    <view class="start">
+      <van-icon class='circle' name="play" color='#77c077'/>
+      <text class="startPlace">清华大学\n<text>13682666570</text></text>
+      <van-icon name="edit" class="rightPlace" bindtap='set'/>
+    </view>
+    <view class="line"></view>
+    <view class="end">
+      <van-icon class='circle' name="play" color='#f17274'/>
+      <text class="endPlace">清华大学\n<text>13682666570</text></text>
+      <van-icon name="edit" class="rightPlace" bindtap='set'/>
+    </view>
+  </view>
+</view>
+
+<view class='bottomAdd'>新增地址</view>

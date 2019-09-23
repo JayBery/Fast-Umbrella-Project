@@ -1,14 +1,19 @@
-/* pages/confirmOrder.wxss */
+/* pages/addressList/addressList.wxss */
 page{
   background: #f7f7f7;
 }
 
-.place{
+.title{
+  color: #8c999f;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.listTop{
   background: #ffffff;
-  width: 86vw;
+  width: 100vw;
   margin: 0 auto;
-  margin-top: 30rpx;
-  padding: 30rpx;
+  margin-top: 20rpx;
 }
 
 .start,.end{
@@ -16,22 +21,28 @@ page{
   flex-direction: row;
   align-items: center;
   /* justify-content: center;  */
-  font-size: 34rpx
+  font-size: 34rpx;
 }
 
-.start .leftIcon{
-  color: #77c077;
-  margin: 0 20rpx 0rpx 20rpx;
+.start{
+  padding-top: 30rpx;
 }
 
-.end .leftIcon{
-  color: #f17274;
-  margin: 0 20rpx 0rpx 20rpx;
+.end{
+  padding-bottom: 30rpx;
+}
+
+.start .circle{
+  margin: 0 20rpx 0rpx 40rpx;
+}
+
+.end .circle{
+  margin: 0 20rpx 0rpx 40rpx;
 }
 
 .startPlace{
   margin-left: 10rpx;
-  width: 230rpx;
+  width: 265rpx;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
@@ -45,7 +56,7 @@ page{
 
 .endPlace{
   margin-left: 10rpx;
-  width: 230rpx;
+  width: 265rpx;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
@@ -58,14 +69,13 @@ page{
 }
 
 .rightPlace{
-  margin-left: 26vw;
-  color: #7293AE;
-  font-size: 32rpx;
+  margin-left: 38vw;
+  color: #7293AE
 }
 
 .line{
   margin: 20rpx auto;
-  width: 86vw;
+  width: 100vw;
   border: 1rpx solid #eeeeee
 }
 
@@ -89,33 +99,14 @@ page{
   color: #CACACA;
 }
 
-.remarks{
-  background: #ffffff;
-  width: 86vw;
-  margin: 0 auto;
-  margin-top: 30rpx;
-  padding: 30rpx;
-  font-size: 30rpx;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+.bottomAdd{
+  width: 100vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #EE0A24;
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom:0px;
 
-.remarksRight{
-  width: 60vw;
-  margin-left: 20rpx;
-}
-
-.time{
-  background: #ffffff;
-  width: 86vw;
-  margin: 0 auto;
-  border-top: 1rpx solid #eeeeee;
-  padding: 30rpx;
-  font-size: 30rpx;
-}
-
-.timeRight{
-  margin-left: 50vw;
-  margin-right: 10rpx;
 }

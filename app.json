@@ -5,7 +5,8 @@
     "pages/mine/mine",
     "pages/setting/setting",
     "pages/confirmOrder/confirmOrder",
-    "pages/personalData/personalData"
+    "pages/personalData/personalData",
+    "pages/addressList/addressList"
   ],
   "window": {
     "navigationBarBackgroundColor": "#3080BF",
