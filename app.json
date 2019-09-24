@@ -6,7 +6,10 @@
     "pages/setting/setting",
     "pages/confirmOrder/confirmOrder",
     "pages/personalData/personalData",
-    "pages/addressList/addressList"
+    "pages/addressList/addressList",
+    "pages/addressEdit/addressEdit",
+    "pages/addressEndList/addressEndList",
+    "pages/addressEndEdit/addressEndEdit"
   ],
   "window": {
     "navigationBarBackgroundColor": "#3080BF",

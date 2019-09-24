@@ -1,4 +1,4 @@
-/* pages/addressList/addressList.wxss */
+/* pages/addressEndList/addressEndList.wxss */
 page{
   background: #f7f7f7;
 }

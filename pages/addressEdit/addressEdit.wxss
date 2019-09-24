@@ -1,0 +1,33 @@
+/* pages/addressEdit/addressEdit.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.title{
+  color: #8c999f;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.save{
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 80rpx;
+}
+
+.save button{
+  background: #ee0a24;
+  color: #ffffff;
+}
+
+.del{
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.del button{
+  background: #ffffff;
+  color: #323233;
+}

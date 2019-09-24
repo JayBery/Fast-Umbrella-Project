@@ -1,4 +1,4 @@
-// pages/addressList/addressList.js
+// pages/addressEndList/addressEndList.js
 Page({
 
   /**
@@ -63,9 +63,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  addressEdit(){
+  addressEdit() {
     wx.navigateTo({
-      url: '../addressEdit/addressEdit',
+      url: '../addressEndEdit/addressEndEdit',
     })
   }
 })

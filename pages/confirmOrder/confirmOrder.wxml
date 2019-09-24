@@ -9,7 +9,7 @@
   <view class="end">
     <van-icon name="location" class="leftIcon"/>
     <text class="endPlace">深圳技师学院\n<text>13682666570</text></text>
-    <text class="rightPlace" bindtap='address'>地址簿</text>
+    <text class="rightPlace" bindtap='addressEnd'>地址簿</text>
   </view>
 </view>
 <view class="coupon">

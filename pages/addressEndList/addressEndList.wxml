@@ -1,5 +1,5 @@
-<!--pages/addressList/addressList.wxml-->
-<view class="title">选择出发地址</view>
+<!--pages/addressEndList/addressEndList.wxml-->
+<view class="title">选择目的地</view>
 <view class='addressList'>
   <view class='listTop'>
     <view class="start">
@@ -17,3 +17,4 @@
 </view>
 
 <view class='bottomAdd' bindtap='addressEdit'>新增地址</view>
+

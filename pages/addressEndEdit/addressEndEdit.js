@@ -1,18 +1,29 @@
-// pages/addressList/addressList.js
-Page({
+import areaList from '../../miniprogram_npm/area/area.js';
 
+Page({
   /**
    * 页面的初始数据
    */
   data: {
+    areaList: {},
+    show: false
+  },
 
+  showPopup() {
+    this.setData({ show: true });
+  },
+
+  onClose() {
+    this.setData({ show: false });
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      areaList: areaList
+    })
   },
 
   /**
@@ -62,10 +73,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  addressEdit(){
-    wx.navigateTo({
-      url: '../addressEdit/addressEdit',
-    })
   }
 })
