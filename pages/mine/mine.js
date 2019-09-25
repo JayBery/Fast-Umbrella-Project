@@ -149,5 +149,10 @@ Page({
     wx.navigateTo({
       url: '../personalData/personalData',
     })
+  },
+  jumpFriend: function () {
+    wx.navigateTo({
+      url: '../friendList/friendList',
+    })
   }
 })

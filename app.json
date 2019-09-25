@@ -9,7 +9,8 @@
     "pages/addressList/addressList",
     "pages/addressEdit/addressEdit",
     "pages/addressEndList/addressEndList",
-    "pages/addressEndEdit/addressEndEdit"
+    "pages/addressEndEdit/addressEndEdit",
+    "pages/friendList/friendList"
   ],
   "window": {
     "navigationBarBackgroundColor": "#3080BF",

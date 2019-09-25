@@ -1,0 +1,54 @@
+<!--pages/friendList/friendList.wxml-->
+<view class='header'>
+  <view class='title'>消息</view>
+  <view class='tab'>
+    <text class='left{{cur}}' bindtap='change0'>聊天</text>
+    <text class='right{{cur}}' bindtap='change1'>可能认识的人</text>
+  </view>
+</view>
+
+<view class="list" wx:if="{{active==0}}">
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+</view>
+
+<view class='listMaybe' wx:else>
+  <view class='oneFriend'>
+    <image class="headImg" src="/images/head.jpg"></image>
+    <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
+  </view>
+</view>

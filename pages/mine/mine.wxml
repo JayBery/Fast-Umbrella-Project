@@ -24,9 +24,9 @@
     </view>
   </view>
   <view class="mine-nav">
-    <view class="mine-pic">
-      <image class="icon-photo" src="/images/album.png"></image>
-      <text class="have-photo"><text>1/9\n</text>上传相册</text>
+    <view class="mine-pic" bindtap='jumpFriend'>
+      <image class="icon-photo" src="/images/friend.png"></image>
+      <text class="have-photo"><text>19位\n</text>我的好友</text>
     </view>
     <view class="mine-card" bindtap="jumpPage">
       <image class="icon-photo" src="/images/data.png"></image>

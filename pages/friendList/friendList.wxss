@@ -1,0 +1,71 @@
+/* pages/friendList/friendList.wxss */
+.header{
+  background: #FAF6F7;
+}
+
+.title{
+  font-size: 56rpx;
+  font-weight: bold;
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 50rpx;
+}
+
+.tab{
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 50rpx;
+  font-size: 30rpx;
+  padding-bottom: 12rpx;
+}
+
+.tab .left0{
+  padding-bottom: 10rpx; 
+  border-bottom: 3rpx solid black 
+}
+
+.tab .right0{
+  margin-left: 100rpx;
+  padding-bottom: 10rpx; 
+}
+
+.tab .left1{
+  padding-bottom: 10rpx; 
+}
+
+.tab .right1{
+  margin-left: 100rpx;
+  padding-bottom: 10rpx; 
+  border-bottom: 3rpx solid black 
+}
+
+.list{
+  margin: 30rpx 0 30rpx 30rpx;
+}
+
+.listMaybe{
+  margin: 30rpx 0 30rpx 30rpx;
+}
+
+.headImg{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100rpx;
+  margin-right: 20rpx; 
+}
+
+.oneFriend{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.oneFriend .name{
+  font-size: 32rpx
+}
+
+.oneFriend .tip{
+  font-size: 24rpx;
+  color: #A6A6A6;
+}
