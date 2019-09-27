@@ -13,7 +13,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
 
+      title: "我的好友"
+
+    });
   },
 
   change0(){
@@ -26,6 +30,11 @@ Page({
     this.setData({
       cur: 1,
       active: 1
+    })
+  },
+  jumpRoom(){
+    wx.navigateTo({
+      url: '../chatRoom/chatRoom',
     })
   },
 

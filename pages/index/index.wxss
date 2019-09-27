@@ -75,3 +75,6 @@ page{
   margin-left: 40vw;
 }
   
+.bottom{
+  height: 120rpx;
+}

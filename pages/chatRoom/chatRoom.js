@@ -1,4 +1,4 @@
-// pages/addressList/addressList.js
+// pages/chatRoom/chatRoom.js
 Page({
 
   /**
@@ -14,7 +14,7 @@ Page({
   onLoad: function (options) {
     wx.setNavigationBarTitle({
 
-      title: "地址簿"
+      title: "臭妹妹"
 
     });
   },
@@ -66,10 +66,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  addressEdit(){
-    wx.navigateTo({
-      url: '../addressEdit/addressEdit',
-    })
   }
 })

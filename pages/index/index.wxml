@@ -32,5 +32,6 @@
       </view>
     </view>
   </view>
+  <view class='bottom'></view>
   <tabbar tabbar="{{tabbar}}"></tabbar> 
 </view>

@@ -8,7 +8,7 @@
 </view>
 
 <view class="list" wx:if="{{active==0}}">
-  <view class='oneFriend'>
+  <view class='oneFriend' bindtap='jumpRoom'>
     <image class="headImg" src="/images/head.jpg"></image>
     <text class="name">臭妹妹\n<text class='tip'>这是简介</text></text>
   </view>

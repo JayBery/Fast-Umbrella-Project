@@ -1,0 +1,17 @@
+<!--pages/chatRoom/chatRoom.wxml-->
+<view class='mainPage'>
+  <view class='tips'>你们在2019年09月17日认识了</view>
+  <view class='message'>
+    <view class='time'>2019年09月18日 08:18</view>
+    <view class='head'>
+      <image src='/images/head.jpg'></image>
+      <text class='bubbleTail'>早安</text>
+    </view>
+
+    <view class='time'>2019年09月19日 08:18</view>
+    <view class='headMe'>
+      <text class='bubbleTailMe'>晚安</text>
+      <image src='/images/pic.jpg'></image>
+    </view>
+  </view>
+</view>
