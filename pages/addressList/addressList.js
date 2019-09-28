@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    bg: true,
+    bg1: true
   },
 
   /**
@@ -70,6 +71,23 @@ Page({
   addressEdit(){
     wx.navigateTo({
       url: '../addressEdit/addressEdit',
+    })
+  },
+  set() {
+    wx.navigateTo({
+      url: '../addressEndEdit/addressEndEdit',
+    })
+  },
+  choose() {
+    this.setData({
+      bg: false,
+      bg1: true
+    })
+  },
+  choose1() {
+    this.setData({
+      bg: true,
+      bg1: false
     })
   }
 })

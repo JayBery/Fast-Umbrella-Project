@@ -23,7 +23,7 @@ Page({
   onLoad: function (options) {
     wx.setNavigationBarTitle({
 
-      title: "新增地址"
+      title: "地址编辑"
 
     });
     this.setData({

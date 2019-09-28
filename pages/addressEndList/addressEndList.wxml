@@ -2,16 +2,16 @@
 <view class="title">选择目的地</view>
 <view class='addressList'>
   <view class='listTop'>
-    <view class="start">
-      <van-icon class='circle' name="circle" color='#f17274'/>
+    <view class="start" bindtap='choose'>
+      <van-icon class='circle' name="{{bg?'circle':'checked'}}" color='#f17274'/>
       <text class="startPlace">深圳技师学院\n<text>13682666570</text></text>
-      <van-icon name="edit" class="rightPlace" bindtap='set'/>
+      <van-icon name="edit" class="rightPlace" catchtap='set'/>
     </view>
     <view class="line"></view>
-    <view class="start">
-      <van-icon class='circle' name="circle" color='#f17274'/>
+    <view class="start" bindtap='choose1'>
+      <van-icon class='circle' name="{{bg1?'circle':'checked'}}" color='#f17274'/>
       <text class="startPlace">深圳技师学院\n<text>13682666570</text></text>
-      <van-icon name="edit" class="rightPlace" bindtap='set'/>
+      <van-icon name="edit" class="rightPlace" catchtap='set'/>
     </view>
   </view>
 </view>
