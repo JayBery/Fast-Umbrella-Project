@@ -85,3 +85,37 @@ page{
   top: 6px;
   right: -16px;
 }
+
+.sayBottom{
+  position: fixed;
+  width: 100%;
+  height: 90rpx;
+  bottom:0px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sayBottom .emj{
+  margin-left: 10rpx;
+}
+
+.sayBottom .pic{
+  margin-left: 4rpx;
+}
+
+.sayBottom .input{
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  width: 60vw;
+}
+
+.sayBottom .sent{
+  margin-left: 10vw;
+  color: #8880d3;
+}
+
+.iphoneX-height{
+  padding-bottom: 66rpx;
+}

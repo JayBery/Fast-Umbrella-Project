@@ -15,3 +15,9 @@
     </view>
   </view>
 </view>
+<view class="sayBottom {{isIphoneX?'iphoneX-height':''}}">
+    <van-icon name="smile-o" class='emj' size="22px" />
+    <van-icon name="add-o" class='pic' size="22px" />
+    <input placeholder='请输入..' class='input'></input>
+    <text class='sent'>发送</text>
+</view>

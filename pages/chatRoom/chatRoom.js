@@ -1,11 +1,12 @@
 // pages/chatRoom/chatRoom.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    isIphoneX: app.globalData.systemInfo.model.substring(0, 8) == "iPhone X" ? true : false,
   },
 
   /**
