@@ -11,7 +11,8 @@
     "pages/addressEndList/addressEndList",
     "pages/addressEndEdit/addressEndEdit",
     "pages/friendList/friendList",
-    "pages/chatRoom/chatRoom"
+    "pages/chatRoom/chatRoom",
+    "pages/cardMain/cardMain"
   ],
   "window": {
     "navigationBarBackgroundColor": "#3080BF",

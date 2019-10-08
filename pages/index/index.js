@@ -8,7 +8,11 @@ Page({
     tabbar: {},
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    isIphoneX: app.globalData.systemInfo.model.substring(0, 8) == "iPhone X" ? true : false,
+    name: "like-o",
+    isLike: false,
+    manyLike: 31
   },
   
   onLoad: function () {
@@ -40,4 +44,25 @@ Page({
       })
     }
   },
+  like: function(){
+    if(this.data.name=="like-o"){
+      this.setData({
+        name: "like",
+        isLike: true,
+        manyLike: this.data.manyLike + 1
+      })
+    }else{
+      this.setData({
+        name: "like-o",
+        isLike: false,
+        manyLike: this.data.manyLike - 1
+      })
+    }
+    
+  },
+  cardMain: function(){
+    wx.navigateTo({
+      url: '../cardMain/cardMain',
+    })
+  }
 })

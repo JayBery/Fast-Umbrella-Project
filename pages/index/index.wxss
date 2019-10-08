@@ -78,3 +78,11 @@ page{
 .bottom{
   height: 120rpx;
 }
+
+.iphoneXBottom{
+  height: 186rpx;
+}
+
+.likeBgcolor{
+  color: red;
+}

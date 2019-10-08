@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view>
   <view class='card-list'>
-    <view class="user-card">
+    <view class="user-card" bindtap='cardMain'>
       <view class="card-top">
         <image src="/images/head.jpg"></image>
         <text class="username"><text>屎到淋头还搅便\n</text>1个小时前</text>
@@ -11,7 +11,7 @@
       </view>
       <view class="text-bottom">花店不开了，花继续开</view>
       <view class="icon-bottom">
-        <van-icon name="like-o" class="left-like" /><text>3.1k</text>
+        <van-icon name="{{name}}" class="left-like {{isLike?'likeBgcolor':''}}"  catchtap='like' /><text>{{manyLike}}</text>
         <van-icon name="chat-o" class="left-say" /><text>221</text>
         <van-icon name="share" class="right-share" /><text>12</text>
       </view>
@@ -26,12 +26,12 @@
       </view>
       <view class="text-bottom">花店不开了，花继续开</view>
       <view class="icon-bottom">
-        <van-icon name="like-o" class="left-like" /><text>3.1k</text>
+        <van-icon name="like-o" class="left-like" /><text>12</text>
         <van-icon name="chat-o" class="left-say" /><text>221</text>
         <van-icon name="share" class="right-share" /><text>12</text>
       </view>
     </view>
   </view>
-  <view class='bottom'></view>
+  <view class="bottom {{isIphoneX?'iphoneXBottom':''}}"></view>
   <tabbar tabbar="{{tabbar}}"></tabbar> 
 </view>
