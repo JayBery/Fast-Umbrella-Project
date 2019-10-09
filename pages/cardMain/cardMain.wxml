@@ -26,4 +26,7 @@
   <view class='textMain'>我也不懂啥意思</view>
 </view>
 
-<view class='seeAll'>查看全部评论<van-icon name="arrow" class='iconRight' /></view>
+<view class="seeAll">查看全部评论<van-icon name="arrow" class='iconRight' /></view>
+<view class="{{isIphoneX?'iphonex':'no'}}"></view>
+
+<input placeholder='请输入评论' class="wantSay {{isIphoneX?'iphoneXBottom':''}}"></input>

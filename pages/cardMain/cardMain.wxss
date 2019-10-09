@@ -118,9 +118,7 @@
 }
 
 .textMain{
-  width: 89vw;
-  margin: 0 auto;
-  margin-left: 155rpx;
+  padding-left: 155rpx;
   margin-top: 20rpx;
   margin-bottom: 50rpx;
 }
@@ -131,6 +129,7 @@
 
 .seeAll{
   margin: 60rpx 0;
+  margin-bottom: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -138,6 +137,34 @@
   font-size: 28rpx;
 }
 
+.iphonex{
+  height: 210rpx;
+}
+
+.no{
+  height: 140rpx;
+}
+
 .iconRight{
   font-size: 25rpx;
+}
+
+.likeBgcolor{
+  color: red;
+}
+
+.wantSay{
+  height: 80rpx;
+  width: 100vw;
+  background: #ffffff;
+  position: fixed;
+  bottom:0px;
+  padding-left: 30rpx;
+  /* color: #ececec; */
+  font-size: 28rpx;
+  box-shadow:0 -2px 3px -1px #ececec;
+}
+
+.iphoneXBottom{
+  padding-bottom: 66rpx;
 }

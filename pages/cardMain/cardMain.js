@@ -1,4 +1,5 @@
 // pages/cardMain/cardMain.js
+const app = getApp()
 Page({
 
   /**
@@ -7,7 +8,8 @@ Page({
   data: {
     name: "like-o",
     isLike: false,
-    manyLike: 31
+    manyLike: 31,
+    isIphoneX: app.globalData.systemInfo.model.substring(0, 8) == "iPhone X" ? true : false,
   },
 
   /**
